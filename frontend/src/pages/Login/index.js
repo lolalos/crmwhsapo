@@ -74,7 +74,7 @@ const Login = () => {
       <div className={classes.paper}>
         <img alt="logo" src={logo}></img>
         <Typography component="h1" variant="h5">
-          {i18n.t("login.title")}
+          {i18n.t("iniciar secion ")}
         </Typography>
         <form className={classes.form} noValidate onSubmit={handlSubmit}>
           <TextField
@@ -83,7 +83,7 @@ const Login = () => {
             required
             fullWidth
             id="email"
-            label={i18n.t("login.form.email")}
+            label={i18n.t("email")}
             name="email"
             value={user.email}
             onChange={handleChangeInput}
@@ -96,7 +96,7 @@ const Login = () => {
             required
             fullWidth
             name="password"
-            label={i18n.t("login.form.password")}
+            label={i18n.t("password")}
             id="password"
             value={user.password}
             onChange={handleChangeInput}
@@ -122,7 +122,7 @@ const Login = () => {
             color="primary"
             className={classes.submit}
           >
-            {i18n.t("login.buttons.submit")}
+            {i18n.t("login")}
           </Button>
           <Grid container>
             <Grid item>
@@ -132,7 +132,7 @@ const Login = () => {
                 component={RouterLink}
                 to="/signup"
               >
-                {i18n.t("login.buttons.register")}
+                {i18n.t("register")}
               </Link>
             </Grid>
           </Grid>
